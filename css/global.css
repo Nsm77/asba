@@ -1,13 +1,3 @@
-:root {
-  --color-primary: #1B2B5C;   /* deep navy */
-  --color-accent: #BE9256;    /* gold */
-  --color-bg: #FFFFFF;        /* white */
-  --color-text: #1B2B5C;
-  --color-text-light: #FFFFFF;
-  --color-error: #e53e3e;
-  --color-success: #48bb78;
-}
-
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -22,9 +12,9 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    color: var(--color-text);
+    color: #1B2B5C;
     overflow-x: hidden;
-    background: var(--color-bg);
+    background: #FFFFFF;
 }
 
 /* Custom Scrollbar */
@@ -37,12 +27,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--color-accent);
+    background: #BE9256;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--color-accent);
+    background: #a67c47;
 }
 
 .container {
@@ -75,11 +65,11 @@ a {
     gap: 0.5rem;
     padding: 14px 28px;
     border: none;
-    border-radius: 999px;
+    border-radius: 12px;
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 15px;
     position: relative;
     overflow: hidden;
@@ -103,36 +93,40 @@ a {
 }
 
 .btn-primary {
-    background-color: var(--color-primary);
-    color: var(--color-text-light);
+    background: linear-gradient(135deg, #BE9256 0%, #d4a76a 50%, #BE9256 100%);
+    color: white;
+    box-shadow: 0 8px 25px rgba(190, 146, 86, 0.4);
     border: 2px solid transparent;
 }
 
 .btn-primary:hover {
-    background-color: var(--color-accent);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 12px 35px rgba(190, 146, 86, 0.6);
+    background: linear-gradient(135deg, #d4a76a 0%, #BE9256 50%, #d4a76a 100%);
 }
 
 .btn-primary:active {
-    transform: translateY(-1px);
+    transform: translateY(-1px) scale(1.01);
 }
 
 .btn-outline {
     background: transparent;
-    color: var(--color-accent);
-    border: 2px solid var(--color-accent);
+    color: #BE9256;
+    border: 2px solid #BE9256;
+    backdrop-filter: blur(10px);
 }
 
 .btn-outline:hover {
-    background: var(--color-accent);
-    color: var(--color-text-light);
-    transform: translateY(-2px);
+    background: #BE9256;
+    color: white;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 12px 35px rgba(190, 146, 86, 0.4);
 }
 
 .btn-large {
     padding: 18px 36px;
     font-size: 16px;
+    border-radius: 16px;
 }
 
 .btn-large i {
@@ -180,7 +174,7 @@ a {
     gap: 0.8rem;
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--color-primary);
+    color: #1B2B5C;
     transition: all 0.3s ease;
 }
 
@@ -205,7 +199,7 @@ a {
 
 .nav-link {
     font-weight: 600;
-    color: var(--color-primary);
+    color: #1B2B5C;
     position: relative;
     padding: 0.5rem 0;
     transition: all 0.3s ease;
@@ -217,13 +211,13 @@ a {
 }
 
 .nav-link:hover {
-    color: var(--color-accent);
+    color: #7F001E;
     transform: translateY(-2px);
     transition: all 0.3s ease-out;
 }
 
 .nav-link.active {
-    color: var(--color-accent);
+    color: #7F001E;
     font-weight: 700;
     transform: translateY(0);
 }
@@ -235,7 +229,7 @@ a {
     left: 0;
     width: 100%;
     height: 2px;
-    background: var(--color-accent);
+    background: linear-gradient(90deg, #7F001E, #a30027);
     transition: all 0.3s ease-out;
     transform: scaleX(0);
     transform-origin: bottom center;
@@ -249,7 +243,7 @@ a {
 
 .nav-link.active::after {
     transform: scaleX(1);
-    background: var(--color-accent);
+    background: linear-gradient(90deg, #7F001E, #a30027);
 }
 
 .nav-actions {
@@ -285,7 +279,7 @@ a {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 600;
-    color: var(--color-primary);
+    color: #1B2B5C;
 }
 
 .form-group input[type="text"],
@@ -310,10 +304,10 @@ a {
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    border-color: var(--color-accent);
+    border-color: #BE9256;
     box-shadow: 0 0 0 3px rgba(190, 146, 86, 0.2);
     outline: none;
-    background: var(--color-bg);
+    background: #ffffff;
 }
 
 .form-group textarea {
@@ -335,7 +329,7 @@ a {
     left: 0;
     width: 100%;
     background: rgba(27, 43, 92, 0.95);
-    color: var(--color-text-light);
+    color: white;
     padding: 1.5rem 0;
     z-index: 10000;
     display: none; /* Hidden by default */
@@ -373,8 +367,8 @@ a {
 
 /* Footer */
 .footer {
-    background: var(--color-primary);
-    color: var(--color-text-light);
+    background: #1B2B5C;
+    color: white;
     padding: 4rem 0 2rem;
     font-size: 0.95rem;
 }
@@ -389,7 +383,7 @@ a {
 .footer-col h4 {
     font-size: 1.3rem;
     margin-bottom: 1.5rem;
-    color: var(--color-accent);
+    color: #BE9256;
     position: relative;
 }
 
@@ -400,7 +394,7 @@ a {
     left: 0;
     width: 50px;
     height: 3px;
-    background: var(--color-accent);
+    background: linear-gradient(90deg, #BE9256, #d4a76a);
     border-radius: 2px;
 }
 
@@ -423,13 +417,13 @@ a {
 
 .footer-col ul li a:hover {
     opacity: 1;
-    color: var(--color-accent);
+    color: #BE9256;
     transform: translateX(5px);
 }
 
 .footer-col p i {
     margin-right: 10px;
-    color: var(--color-accent);
+    color: #BE9256;
 }
 
 .social-links {
@@ -451,7 +445,7 @@ a {
 }
 
 .social-links a:hover {
-    background: var(--color-accent);
+    background: #BE9256;
     transform: translateY(-3px) scale(1.1);
 }
 
@@ -497,7 +491,7 @@ a {
     .nav-link {
         display: block;
         padding: 1rem 0;
-        color: var(--color-primary);
+        color: #1B2B5C;
     }
 
     .nav-link:hover {
@@ -638,7 +632,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--color-primary);
+    background: #1B2B5C;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -648,7 +642,7 @@ a {
 
 .loader {
     border: 8px solid rgba(255, 255, 255, 0.2);
-    border-top: 8px solid var(--color-accent);
+    border-top: 8px solid #BE9256;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -665,8 +659,8 @@ a {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: var(--color-primary);
-    color: var(--color-text-light);
+    background: #1B2B5C;
+    color: white;
     border: none;
     border-radius: 50%;
     width: 50px;
@@ -682,7 +676,7 @@ a {
 }
 
 .dark-mode-toggle:hover {
-    background: var(--color-accent);
+    background: #BE9256;
 }
 
 
@@ -722,7 +716,7 @@ a {
 /* Android Chrome specific optimizations */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
     .btn:focus {
-        outline: 2px solid var(--color-accent);
+        outline: 2px solid #BE9256;
         outline-offset: 2px;
     }
 }
@@ -785,7 +779,7 @@ a {
     }
     
     input:focus, textarea:focus, select:focus {
-        border-color: var(--color-accent);
+        border-color: #BE9256;
         outline: none;
         box-shadow: 0 0 0 3px rgba(190, 146, 86, 0.1);
     }
@@ -924,155 +918,4 @@ html {
     }
 }
 
-h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-}
 
-p {
-  font-size: clamp(1rem, 2vw, 1.125rem);
-  line-height: 1.7;
-}
-
-.contact-info-grid, .features-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2.5rem;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 4rem 0;
-}
-
-.info-card, .feature-item {
-    background-color: var(--color-bg);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    border: 1px solid transparent;
-    transition: all 0.3s ease;
-}
-
-.info-card:hover, .feature-item:hover {
-    border-color: var(--color-accent);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    padding: 1rem; /* Larger padding */
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    transition: all 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--color-accent);
-    box-shadow: 0 0 0 3px rgba(190, 146, 86, 0.2);
-}
-
-.form-group input.error,
-.form-group select.error,
-.form-group textarea.error {
-    border-color: var(--color-error);
-}
-
-.form-group input.success,
-.form-group select.success,
-.form-group textarea.success {
-    border-color: var(--color-success);
-}
-
-.header {
-    background: var(--color-primary);
-    color: var(--color-text-light);
-    border-bottom: 1px solid var(--color-accent);
-}
-
-.header .nav-link {
-    color: var(--color-text-light);
-}
-
-.header .nav-link:hover, .header .nav-link.active {
-    color: var(--color-accent);
-}
-
-.header .nav-link::after {
-    background: var(--color-accent);
-}
-
-.nav-brand .logo {
-    color: var(--color-text-light);
-}
-
-.hamburger span {
-    background: var(--color-text-light);
-}
-
-/* Custom Checkbox */
-.checkbox-option {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 1rem;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.checkbox-option input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
-.checkbox-option:hover input ~ .checkmark {
-    background-color: #ccc;
-}
-
-.checkbox-option input:checked ~ .checkmark {
-    background-color: var(--color-accent);
-}
-
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-.checkbox-option input:checked ~ .checkmark:after {
-    display: block;
-}
-
-.checkbox-option .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}

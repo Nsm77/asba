@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord - Espace Client</title>
+    <link rel="stylesheet" href="../css/new-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.0/chart.umd.js" integrity="sha512-vQVygnNGcGBqdDrFso9w5wBlLeJUsARIAlNBK16UeY6fvs1Z2V/a2t+ZvyeCiSy1Q5vDZE/L+2ut3AOBTS2OAQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="../index.html" class="nav-brand">
+                <i class="fas fa-shield-heart"></i>
+                <span>Assurance Santé</span>
+            </a>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="dashboard.html" class="nav-link active">Tableau de Bord</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Mes Remboursements</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Mon Contrat</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <div class="notification-icon">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge" id="notification-count">0</span>
+                    </div>
+                    <span class="welcome-message">Bonjour, <span id="client-name"></span></span>
+                    <button id="logout-button" class="btn btn-outline">Déconnexion</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title" data-aos="fade-up">Mon Espace Client</h1>
+            </div>
+        </section>
+
+        <section class="dashboard-section">
+            <div class="container">
+                <div class="dashboard-grid-main">
+                    <div class="dashboard-grid-left">
+                        <div class="dashboard-card chart-container" data-aos="fade-up">
+                            <div class="card-header">
+                                <h3>Historique des Remboursements (6 derniers mois)</h3>
+                            </div>
+                            <div class="card-content">
+                                <canvas id="reimbursement-chart"></canvas>
+                            </div>
+                        </div>
+                        <div class="dashboard-card" data-aos="fade-up">
+                            <div class="card-header">
+                                <h3>Actes Médicaux Récents</h3>
+                            </div>
+                            <div class="card-content">
+                                <table class="recent-acts-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Description</th>
+                                            <th>Statut</th>
+                                            <th>Montant</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="recent-acts-body">
+                                        <!-- Rows will be injected by JS -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-grid-right">
+                        <div class="dashboard-card" id="plan-info" data-aos="fade-up">
+                            <div class="card-header">
+                                <h3>Mon Contrat</h3>
+                            </div>
+                            <div class="card-content">
+                                <p><strong>Formule :</strong> <span id="plan-name"></span></p>
+                                <p><strong>Numéro :</strong> <span id="contract-id"></span></p>
+                                <p><strong>Prochaine échéance :</strong> <span id="days-left-value"></span> jours</p>
+                            </div>
+                        </div>
+                         <div class="dashboard-card" id="personal-info" data-aos="fade-up">
+                            <div class="card-header">
+                                <h3>Informations Personnelles</h3>
+                            </div>
+                            <div class="card-content">
+                                <p><i class="fas fa-user"></i> <span id="info-name"></span></p>
+                                <p><i class="fas fa-map-marker-alt"></i> <span id="info-address"></span></p>
+                                <p><i class="fas fa-phone"></i> <span id="info-phone"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Assurance Santé Premium. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/new-script.js"></script>
+</body>
+</html>

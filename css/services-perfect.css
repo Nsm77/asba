@@ -6,7 +6,7 @@
   min-height: 70vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, var(--color-primary) 0%, #2a4073 100%);
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #06b6d4 100%);
   overflow: hidden;
 }
 
@@ -70,7 +70,7 @@
   position: relative;
   z-index: 2;
   text-align: center;
-  color: var(--color-text-light);
+  color: white;
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem 1rem;
@@ -84,7 +84,7 @@
 }
 
 .hero-content .highlight {
-  background: linear-gradient(45deg, var(--color-accent), #d4a76a);
+  background: linear-gradient(45deg, #fbbf24, #f59e0b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -111,7 +111,7 @@
 .stat-number {
   font-size: 2.5rem;
   font-weight: 800;
-  color: var(--color-accent);
+  color: #fbbf24;
   margin-bottom: 0.5rem;
 }
 
@@ -136,7 +136,7 @@
 .section-header-perfect h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--color-primary);
+  color: #1e293b;
   margin-bottom: 1rem;
 }
 
@@ -156,7 +156,7 @@
 }
 
 .pricing-card-perfect {
-  background: var(--color-bg);
+  background: white;
   border-radius: 20px;
   padding: 2.5rem 2rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -171,7 +171,7 @@
 }
 
 .featured-perfect {
-  border-color: var(--color-accent);
+  border-color: #3b82f6;
   transform: scale(1.05);
 }
 
@@ -184,8 +184,8 @@
   top: -12px;
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(45deg, var(--color-accent), #d4a76a);
-  color: var(--color-text-light);
+  background: linear-gradient(45deg, #3b82f6, #1d4ed8);
+  color: white;
   padding: 0.5rem 1.5rem;
   border-radius: 20px;
   font-size: 0.85rem;
@@ -202,20 +202,20 @@
 .plan-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(45deg, var(--color-primary), #2a4073);
+  background: linear-gradient(45deg, #3b82f6, #06b6d4);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 1.5rem;
   font-size: 2rem;
-  color: var(--color-text-light);
+  color: white;
 }
 
 .pricing-header-perfect h3 {
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--color-primary);
+  color: #1e293b;
   margin-bottom: 0.5rem;
 }
 
@@ -236,13 +236,13 @@
 .currency {
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--color-accent);
+  color: #3b82f6;
 }
 
 .amount {
   font-size: 3.5rem;
   font-weight: 800;
-  color: var(--color-primary);
+  color: #1e293b;
 }
 
 .period {
@@ -263,7 +263,7 @@
 }
 
 .feature-perfect i {
-  color: var(--color-success);
+  color: #10b981;
   font-size: 1.1rem;
   width: 20px;
 }
@@ -276,8 +276,8 @@
 
 .btn-pricing-perfect {
   width: 100%;
-  background: linear-gradient(45deg, var(--color-primary), #2a4073);
-  color: var(--color-text-light);
+  background: linear-gradient(45deg, #3b82f6, #1d4ed8);
+  color: white;
   padding: 1rem 2rem;
   border-radius: 12px;
   text-decoration: none;
@@ -293,18 +293,18 @@
 }
 
 .btn-pricing-perfect:hover {
-  background: linear-gradient(45deg, var(--color-accent), #d4a76a);
+  background: linear-gradient(45deg, #1d4ed8, #1e40af);
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(190, 146, 86, 0.3);
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
 }
 
 .featured-perfect .btn-pricing-perfect {
-  background: linear-gradient(45deg, var(--color-accent), #d4a76a);
+  background: linear-gradient(45deg, #f59e0b, #d97706);
 }
 
 .featured-perfect .btn-pricing-perfect:hover {
-  background: linear-gradient(45deg, #d4a76a, var(--color-accent));
-  box-shadow: 0 10px 20px rgba(190, 146, 86, 0.4);
+  background: linear-gradient(45deg, #d97706, #b45309);
+  box-shadow: 0 10px 20px rgba(245, 158, 11, 0.3);
 }
 
 /* Services Showcase */
@@ -333,7 +333,7 @@
 .service-showcase-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
-  border-color: var(--color-accent);
+  border-color: #3b82f6;
 }
 
 .service-showcase-header {
@@ -344,20 +344,20 @@
 .service-showcase-icon {
   width: 70px;
   height: 70px;
-  background: linear-gradient(45deg, var(--color-primary), #2a4073);
+  background: linear-gradient(45deg, #3b82f6, #06b6d4);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 1rem;
   font-size: 1.8rem;
-  color: var(--color-text-light);
+  color: white;
 }
 
 .service-showcase-header h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--color-primary);
+  color: #1e293b;
 }
 
 .service-showcase-content {
@@ -376,12 +376,12 @@
 }
 
 .showcase-item:hover {
-  background: rgba(190, 146, 86, 0.1);
+  background: #e0f2fe;
   transform: translateX(5px);
 }
 
 .showcase-item i {
-  color: var(--color-accent);
+  color: #3b82f6;
   font-size: 1.2rem;
   margin-top: 0.25rem;
   width: 24px;
@@ -390,7 +390,7 @@
 .showcase-item h4 {
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--color-primary);
+  color: #1e293b;
   margin-bottom: 0.25rem;
 }
 
@@ -404,7 +404,7 @@
 .cta-perfect {
   position: relative;
   padding: 5rem 0;
-  background: linear-gradient(135deg, var(--color-primary) 0%, #2a4073 100%);
+  background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
   overflow: hidden;
 }
 
@@ -426,7 +426,7 @@
 .cta-shape {
   position: absolute;
   border-radius: 50%;
-  background: rgba(190, 146, 86, 0.1);
+  background: rgba(59, 130, 246, 0.1);
   animation: pulse 4s ease-in-out infinite;
 }
 
@@ -461,7 +461,7 @@
   position: relative;
   z-index: 2;
   text-align: center;
-  color: var(--color-text-light);
+  color: white;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -504,19 +504,19 @@
 }
 
 .btn-cta-primary {
-  background: linear-gradient(45deg, var(--color-accent), #d4a76a);
-  color: var(--color-text-light);
+  background: linear-gradient(45deg, #f59e0b, #d97706);
+  color: white;
 }
 
 .btn-cta-primary:hover {
-  background: linear-gradient(45deg, #d4a76a, var(--color-accent));
+  background: linear-gradient(45deg, #d97706, #b45309);
   transform: translateY(-3px);
-  box-shadow: 0 15px 30px rgba(190, 146, 86, 0.4);
+  box-shadow: 0 15px 30px rgba(245, 158, 11, 0.4);
 }
 
 .btn-cta-secondary {
   background: transparent;
-  color: var(--color-text-light);
+  color: white;
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -536,7 +536,7 @@
 }
 
 .cta-guarantee i {
-  color: var(--color-success);
+  color: #10b981;
   font-size: 1.1rem;
 }
 

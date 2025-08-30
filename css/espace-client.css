@@ -372,53 +372,6 @@
 
 /* Dark Mode adjustments for client space */
 
-.client-content {
-    background-color: #f7f9fc;
-    padding: 4rem 0;
-}
-
-.login-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.login-form {
-    max-width: 500px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 3rem;
-    border-radius: 16px;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-}
-
-.login-benefits {
-    display: none; /* The new design is cleaner without this section next to the form */
-}
-
-.dashboard-card {
-    border-left-color: var(--color-accent);
-}
-
-.dashboard-card .value {
-    color: var(--color-accent);
-}
-
-.action-btn:hover {
-    border-color: var(--color-accent);
-    background-color: rgba(190, 146, 86, 0.05);
-}
-
-.action-btn i {
-    color: var(--color-accent);
-}
-
-.activity-icon {
-    background-color: rgba(190, 146, 86, 0.1);
-    color: var(--color-accent);
-}
-
 
 
 
