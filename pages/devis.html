@@ -4,127 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devis Gratuit - Assurance Santé Premium</title>
-    <link rel="stylesheet" href="../css/new-style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/modern-design.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar container">
-            <a href="../index.html" class="nav-brand">
-                <i class="fas fa-shield-heart"></i>
-                <span>Assurance Santé</span>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../index.html" class="nav__logo">
+                <i class="fas fa-shield-alt"></i> Assurance Santé
             </a>
-            <div class="nav-menu" id="nav-menu">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="../index.html" class="nav-link">Accueil</a></li>
-                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li class="nav-item"><a href="find-doctor.html" class="nav-link">Trouver un médecin</a></li>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../index.html" class="nav__link">Accueil</a></li>
+                    <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="faq.html" class="nav__link">FAQ</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
                 </ul>
-                <div class="nav-actions">
-                    <div class="dark-mode-toggle">
-                        <label class="toggle-switch">
-                            <input type="checkbox" id="dark-mode-checkbox">
-                            <span class="slider"></span>
-                        </label>
-                    </div>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="nav__btns">
+                <a href="devis.html" class="nav__action-btn">Obtenir un devis</a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section class="page-header">
-            <div class="container">
-                <h1 class="page-title" data-aos="fade-up">Devis Personnalisé</h1>
-                <p class="page-subtitle" data-aos="fade-up" data-aos-delay="100">Obtenez une estimation en quelques étapes simples.</p>
-            </div>
-        </section>
-
-        <section class="quote-section">
-            <div class="container">
-                <div class="quote-form-container">
-                    <div id="quote-progress" class="quote-progress">
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-fill"></div>
+    <main class="main">
+        <section class="section">
+            <h1 class="section__title">Devis Personnalisé</h1>
+            <div class="devis__container container grid">
+                <form action="" class="devis__form grid">
+                    <div class="devis__inputs grid">
+                        <div class="devis__content">
+                            <label for="birthdate" class="devis__label">Date de naissance</label>
+                            <input type="date" id="birthdate" class="devis__input">
                         </div>
-                        <div class="progress-steps">
-                            <div class="progress-step active" data-step="1"><span>Infos</span></div>
-                            <div class="progress-step" data-step="2"><span>Besoins</span></div>
-                            <div class="progress-step" data-step="3"><span>Résultat</span></div>
+                        <div class="devis__content">
+                            <label for="num-people" class="devis__label">Nombre de personnes</label>
+                            <input type="number" id="num-people" value="1" min="1" class="devis__input">
                         </div>
                     </div>
-
-                    <form id="quote-form">
-                        <!-- Step 1 -->
-                        <div class="form-step active" data-step="1">
-                            <div class="form-group">
-                                <label for="birthdate">Date de naissance</label>
-                                <input type="date" id="birthdate" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="num-people">Nombre de personnes à assurer</label>
-                                <input type="number" id="num-people" min="1" value="1" required>
-                            </div>
-                            <div class="form-navigation">
-                                <button type="button" class="btn btn-primary next-step">Suivant</button>
-                            </div>
-                        </div>
-                        <!-- Step 2 -->
-                        <div class="form-step" data-step="2">
-                            <div class="form-group">
-                                <label>Niveau de couverture dentaire</label>
-                                <select id="dental-coverage">
-                                    <option value="0">Basique</option>
-                                    <option value="1">Confort</option>
-                                    <option value="2">Premium</option>
-                                </select>
-                            </div>
-                             <div class="form-group">
-                                <label>Niveau de couverture optique</label>
-                                <select id="optical-coverage">
-                                    <option value="0">Basique</option>
-                                    <option value="1">Confort</option>
-                                    <option value="2">Premium</option>
-                                </select>
-                            </div>
-                            <div class="form-navigation">
-                                <button type="button" class="btn btn-outline prev-step">Précédent</button>
-                                <button type="button" class="btn btn-primary next-step">Calculer</button>
-                            </div>
-                        </div>
-                        <!-- Step 3 -->
-                        <div class="form-step" data-step="3">
-                            <div class="quote-result">
-                                <h2>Votre estimation</h2>
-                                <p class="price-display"><span id="quote-price">--</span>€/mois</p>
-                                <p>Cette estimation est basée sur les informations fournies. Un conseiller vous contactera pour affiner votre offre.</p>
-                                <div class="form-navigation">
-                                    <button type="button" class="btn btn-outline prev-step">Précédent</button>
-                                    <a href="contact.html" class="btn btn-primary">Être recontacté</a>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                    <div class="devis__content">
+                        <label for="dental-coverage" class="devis__label">Couverture Dentaire</label>
+                        <select id="dental-coverage" class="devis__input">
+                            <option value="0">Basique</option>
+                            <option value="1">Confort</option>
+                            <option value="2">Premium</option>
+                        </select>
+                    </div>
+                    <div class="devis__content">
+                        <label for="optical-coverage" class="devis__label">Couverture Optique</label>
+                        <select id="optical-coverage" class="devis__input">
+                            <option value="0">Basique</option>
+                            <option value="1">Confort</option>
+                            <option value="2">Premium</option>
+                        </select>
+                    </div>
+                    <div>
+                        <a href="#" class="button button--flex" id="calculate-devis">
+                            Calculer mon devis
+                            <i class="fas fa-calculator button__icon"></i>
+                        </a>
+                    </div>
+                </form>
+                <div class="devis__result">
+                    <h2 class="devis__result-title">Votre estimation</h2>
+                    <p class="devis__result-price">€<span id="devis-price">--</span>/mois</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2025 Assurance Santé Premium. Tous droits réservés.</p>
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <i class="fas fa-shield-alt"></i> Assurance Santé
+                </a>
+                <p class="footer__description">Votre partenaire de confiance pour une santé de fer.</p>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Navigation</h3>
+                <ul class="footer__links">
+                    <li><a href="../index.html" class="footer__link">Accueil</a></li>
+                    <li><a href="services.html" class="footer__link">Services</a></li>
+                    <li><a href="faq.html" class="footer__link">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Légal</h3>
+                <ul class="footer__links">
+                    <li><a href="mentions.html" class="footer__link">Mentions Légales</a></li>
+                    <li><a href="politique.html" class="footer__link">Confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                </ul>
             </div>
         </div>
+        <span class="footer__copy">&#169; Assurance Santé. Tous droits réservés.</span>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="../js/new-script.js"></script>
+    <script src="../js/modern-script.js"></script>
 </body>
 </html>

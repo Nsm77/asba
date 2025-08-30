@@ -5,39 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assurance Santé Premium | Mutuelle Famille & Complémentaire Santé | Devis Gratuit</title>
     <meta name="description" content="Assurance Santé Premium - Protégez votre famille avec nos solutions d'assurance santé complètes. Devis gratuit en 2 minutes, couverture optimale, tarifs compétitifs. Spécialistes en assurance maladie, mutuelle famille et complémentaire santé.">
-    <link rel="stylesheet" href="css/new-style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/modern-design.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar container">
-            <a href="index.html" class="nav-brand">
-                <i class="fas fa-shield-heart"></i>
-                <span>Assurance Santé</span>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class="fas fa-shield-alt"></i> Assurance Santé
             </a>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Menu de navigation" aria-expanded="false">
-                <span class="hamburger"></span>
-            </button>
-            <div class="nav-menu" id="nav-menu">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link active">Accueil</a></li>
-                    <li class="nav-item"><a href="pages/services.html" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="pages/faq.html" class="nav-link">FAQ</a></li>
-                    <li class="nav-item"><a href="pages/contact.html" class="nav-link">Contact</a></li>
-                    <li class="nav-item"><a href="pages/find-doctor.html" class="nav-link">Trouver un médecin</a></li>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link active-link">Accueil</a></li>
+                    <li class="nav__item"><a href="pages/services.html" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="pages/faq.html" class="nav__link">FAQ</a></li>
+                    <li class="nav__item"><a href="pages/contact.html" class="nav__link">Contact</a></li>
                 </ul>
-                <div class="nav-actions">
-                    <a href="pages/devis.html" class="btn btn-primary">Obtenir un devis</a>
-                    <div class="dark-mode-toggle">
-                        <label class="toggle-switch">
-                            <input type="checkbox" id="dark-mode-checkbox">
-                            <span class="slider"></span>
-                        </label>
-                    </div>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <a href="pages/devis.html" class="nav__action-btn">Obtenir un devis</a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
                 </div>
             </div>
         </nav>
@@ -203,54 +196,45 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3 class="footer-title">Assurance Santé Premium</h3>
-                    <p>Votre partenaire de confiance pour une couverture santé optimale. Des solutions sur-mesure pour protéger votre famille et votre avenir.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h3 class="footer-title">Navigation</h3>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="pages/services.html">Nos Services</a></li>
-                        <li><a href="pages/devis.html">Obtenir un Devis</a></li>
-                        <li><a href="pages/faq.html">FAQ</a></li>
-                        <li><a href="pages/contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3 class="footer-title">Informations Légales</h3>
-                    <ul>
-                        <li><a href="pages/mentions.html">Mentions Légales</a></li>
-                        <li><a href="pages/politique.html">Politique de Confidentialité</a></li>
-                        <li><a href="pages/conditions.html">Conditions Générales</a></li>
-                        <li><a href="pages/espace-client.html">Espace Client</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3 class="footer-title">Contact Rapide</h3>
-                    <address>
-                        <p><i class="fas fa-map-marker-alt"></i> 99 rue de camas, 13005 Marseille</p>
-                        <p><i class="fas fa-phone-alt"></i> <a href="tel:+33982444148">09 82 44 41 48</a></p>
-                        <p><i class="fas fa-envelope"></i> <a href="mailto:contact@assurance-sante-premium.fr">contact@assurance-sante-premium.fr</a></p>
-                    </address>
-                </div>
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <i class="fas fa-shield-alt"></i> Assurance Santé
+                </a>
+                <p class="footer__description">Votre partenaire de confiance pour une santé de fer.</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Assurance Santé Premium. Tous droits réservés.</p>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Navigation</h3>
+                <ul class="footer__links">
+                    <li><a href="index.html" class="footer__link">Accueil</a></li>
+                    <li><a href="pages/services.html" class="footer__link">Services</a></li>
+                    <li><a href="pages/faq.html" class="footer__link">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Légal</h3>
+                <ul class="footer__links">
+                    <li><a href="pages/mentions.html" class="footer__link">Mentions Légales</a></li>
+                    <li><a href="pages/politique.html" class="footer__link">Confidentialité</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                </ul>
             </div>
         </div>
+
+        <span class="footer__copy">&#169; Assurance Santé. Tous droits réservés.</span>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/new-script.js"></script>
+    <script src="js/modern-script.js"></script>
 </body>
 </html>
