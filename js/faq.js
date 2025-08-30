@@ -9,30 +9,59 @@ document.addEventListener("DOMContentLoaded", function() {
             
             // Close all other FAQ items
             faqQuestions.forEach(q => {
-                q.classList.remove('active');
-                q.nextElementSibling.classList.remove('active');
+                if (q !== question) {
+                    q.classList.remove('active');
+                    q.nextElementSibling.classList.remove('active');
+                }
             });
             
             // Toggle current item
-            if (!isActive) {
-                question.classList.add('active');
-                answer.classList.add('active');
-            }
+            question.classList.toggle('active');
+            answer.classList.toggle('active');
         });
     });
 
-    // Search functionality
+    // Search functionality with highlighting
     const searchInput = document.getElementById('faq-search');
     if (searchInput) {
+        const faqItems = document.querySelectorAll('.faq-item');
+        const originalContents = new Map();
+
+        faqItems.forEach(item => {
+            const questionSpan = item.querySelector('.faq-question span');
+            const answerDiv = item.querySelector('.faq-answer');
+            originalContents.set(item, {
+                question: questionSpan.innerHTML,
+                answer: answerDiv.innerHTML
+            });
+        });
+
         searchInput.addEventListener('input', function() {
-            const searchTerm = this.value.toLowerCase();
-            const faqItems = document.querySelectorAll('.faq-item');
+            const searchTerm = this.value.trim().toLowerCase();
             
             faqItems.forEach(item => {
-                const question = item.querySelector('.faq-question span').textContent.toLowerCase();
-                const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+                const { question, answer } = originalContents.get(item);
+                const questionSpan = item.querySelector('.faq-question span');
+                const answerDiv = item.querySelector('.faq-answer');
+
+                const questionText = question.toLowerCase();
+                const answerText = answer.toLowerCase();
+
+                // Reset content
+                questionSpan.innerHTML = question;
+                answerDiv.innerHTML = answer;
                 
-                if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                if (searchTerm.length > 0 && (questionText.includes(searchTerm) || answerText.includes(searchTerm))) {
+                    item.style.display = 'block';
+
+                    const highlight = (text, term) => {
+                        const regex = new RegExp(`(${term})`, 'gi');
+                        return text.replace(regex, '<mark>$1</mark>');
+                    };
+
+                    questionSpan.innerHTML = highlight(question, searchTerm);
+                    answerDiv.innerHTML = highlight(answer, searchTerm);
+                } else if (searchTerm.length === 0) {
                     item.style.display = 'block';
                 } else {
                     item.style.display = 'none';

@@ -331,6 +331,121 @@
 
 /* Dark Mode adjustments for devis page */
 
+/* Progress Bar */
+.progress-bar {
+    background-color: #e2e8f0;
+    border-radius: 999px;
+    height: 10px;
+}
+
+.progress-fill {
+    background-color: var(--color-accent);
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Step Indicator */
+.step-indicator .step.active .step-number {
+    background-color: var(--color-accent);
+    color: var(--color-text-light);
+    box-shadow: 0 0 0 4px rgba(190, 146, 86, 0.2);
+}
+
+.step-indicator .step.completed .step-number {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+}
+
+.step-indicator .step.active .step-title {
+    color: var(--color-accent);
+}
+
+/* Form Steps */
+.form-step {
+    animation: fadeIn 0.5s ease-in-out;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 16px;
+    padding: 2rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Radio/Checkbox buttons */
+.radio-option input[type="radio"]:checked + .radio-card {
+    border-color: var(--color-accent);
+    background: rgba(190, 146, 86, 0.05);
+    box-shadow: 0 5px 15px rgba(190, 146, 86, 0.1);
+}
+
+.radio-card i {
+    color: var(--color-accent);
+}
+
+/* Custom Checkbox */
+.checkbox-option {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox-option input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.checkbox-option:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.checkbox-option input:checked ~ .checkmark {
+    background-color: var(--color-accent);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-option input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-option .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
 
 
 

@@ -184,7 +184,7 @@
                             <div class="radio-option">
                                 <input type="radio" id="salarie" name="situation_pro" value="salarie" required>
                                 <label for="salarie" class="radio-card">
-                                    <i class="fas fa-briefcase"></i>
+                                    <i class="fas fa-briefcase" aria-hidden="true"></i>
                                     <h4>Salarié</h4>
                                     <p>Vous êtes employé en CDI, CDD, intérim...</p>
                                 </label>
@@ -192,7 +192,7 @@
                             <div class="radio-option">
                                 <input type="radio" id="independant" name="situation_pro" value="independant">
                                 <label for="independant" class="radio-card">
-                                    <i class="fas fa-user-tie"></i>
+                                    <i class="fas fa-user-tie" aria-hidden="true"></i>
                                     <h4>Indépendant</h4>
                                     <p>Artisan, commerçant, profession libérale...</p>
                                 </label>
@@ -200,7 +200,7 @@
                             <div class="radio-option">
                                 <input type="radio" id="retraite" name="situation_pro" value="retraite">
                                 <label for="retraite" class="radio-card">
-                                    <i class="fas fa-chair"></i>
+                                    <i class="fas fa-chair" aria-hidden="true"></i>
                                     <h4>Retraité</h4>
                                     <p>Vous êtes à la retraite</p>
                                 </label>
@@ -208,7 +208,7 @@
                             <div class="radio-option">
                                 <input type="radio" id="etudiant" name="situation_pro" value="etudiant">
                                 <label for="etudiant" class="radio-card">
-                                    <i class="fas fa-graduation-cap"></i>
+                                    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
                                     <h4>Étudiant</h4>
                                     <p>Vous êtes inscrit dans un établissement</p>
                                 </label>
@@ -216,7 +216,7 @@
                             <div class="radio-option">
                                 <input type="radio" id="sans_emploi" name="situation_pro" value="sans_emploi">
                                 <label for="sans_emploi" class="radio-card">
-                                    <i class="fas fa-user-slash"></i>
+                                    <i class="fas fa-user-slash" aria-hidden="true"></i>
                                     <h4>Sans emploi</h4>
                                     <p>Vous êtes à la recherche d'un emploi</p>
                                 </label>
@@ -224,7 +224,7 @@
                             <div class="radio-option">
                                 <input type="radio" id="autre_pro" name="situation_pro" value="autre">
                                 <label for="autre_pro" class="radio-card">
-                                    <i class="fas fa-ellipsis-h"></i>
+                                    <i class="fas fa-ellipsis-h" aria-hidden="true"></i>
                                     <h4>Autre</h4>
                                     <p>Autre situation professionnelle</p>
                                 </label>
@@ -238,21 +238,21 @@
                             <div class="radio-option">
                                 <input type="radio" id="celibataire" name="situation_famille" value="celibataire" required>
                                 <label for="celibataire" class="radio-card">
-                                    <i class="fas fa-user"></i>
+                                    <i class="fas fa-user" aria-hidden="true"></i>
                                     <h4>Célibataire</h4>
                                 </label>
                             </div>
                             <div class="radio-option">
                                 <input type="radio" id="couple" name="situation_famille" value="couple">
                                 <label for="couple" class="radio-card">
-                                    <i class="fas fa-user-friends"></i>
+                                    <i class="fas fa-user-friends" aria-hidden="true"></i>
                                     <h4>En couple</h4>
                                 </label>
                             </div>
                             <div class="radio-option">
                                 <input type="radio" id="famille" name="situation_famille" value="famille">
                                 <label for="famille" class="radio-card">
-                                    <i class="fas fa-users"></i>
+                                    <i class="fas fa-users" aria-hidden="true"></i>
                                     <h4>Famille</h4>
                                 </label>
                             </div>
@@ -292,26 +292,26 @@
                     <div class="form-group">
                         <label>Besoins spécifiques (cochez toutes les options pertinentes)</label>
                         <div class="checkbox-group">
-                            <div class="checkbox-option">
+                            <label class="checkbox-option">Soins dentaires (prothèses, orthodontie)
                                 <input type="checkbox" id="dentaire" name="besoins_specifiques" value="dentaire">
-                                <label for="dentaire">Soins dentaires (prothèses, orthodontie)</label>
-                            </div>
-                            <div class="checkbox-option">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox-option">Optique (lunettes, lentilles)
                                 <input type="checkbox" id="optique" name="besoins_specifiques" value="optique">
-                                <label for="optique">Optique (lunettes, lentilles)</label>
-                            </div>
-                            <div class="checkbox-option">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox-option">Hospitalisation (chambre particulière)
                                 <input type="checkbox" id="hospitalisation" name="besoins_specifiques" value="hospitalisation">
-                                <label for="hospitalisation">Hospitalisation (chambre particulière)</label>
-                            </div>
-                            <div class="checkbox-option">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox-option">Médecines douces (ostéopathie, acupuncture)
                                 <input type="checkbox" id="medecines_douces" name="besoins_specifiques" value="medecines_douces">
-                                <label for="medecines_douces">Médecines douces (ostéopathie, acupuncture)</label>
-                            </div>
-                            <div class="checkbox-option">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="checkbox-option">Maternité
                                 <input type="checkbox" id="maternite" name="besoins_specifiques" value="maternite">
-                                <label for="maternite">Maternité</label>
-                            </div>
+                                <span class="checkmark"></span>
+                            </label>
                         </div>
                     </div>
 

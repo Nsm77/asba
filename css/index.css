@@ -2547,3 +2547,47 @@
         gap: 1rem;
     }
 }
+
+.hero {
+    background: linear-gradient(135deg, var(--color-primary) 0%, #2a4073 100%);
+    color: var(--color-text-light);
+}
+
+.hero .hero-title {
+    color: var(--color-text-light);
+}
+
+.hero .btn-primary {
+    background-color: var(--color-accent);
+    color: var(--color-text-light);
+}
+
+.hero .btn-primary:hover {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    transform: translateY(-2px);
+}
+
+.hero-overlay {
+    display: none; /* The new background should be sufficient, no need for an extra overlay */
+}
+
+.hero::before {
+    background-image:
+        radial-gradient(2px 2px at 20px 30px, rgba(255, 255, 255, 0.1), transparent),
+        radial-gradient(2px 2px at 80px 120px, rgba(190, 146, 86, 0.2), transparent),
+        radial-gradient(3px 3px at 50% 50%, rgba(255, 255, 255, 0.05), transparent);
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    animation: float 15s linear infinite;
+}
+
+@keyframes float {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-20px, 10px); }
+    100% { transform: translate(0, 0); }
+}
+
+.scroll-indicator .scroll-arrow {
+    border-color: var(--color-accent);
+}

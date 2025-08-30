@@ -170,6 +170,65 @@
 
 /* Dark Mode adjustments for FAQ page */
 
+.faq-item {
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-question {
+    background-color: var(--color-bg);
+    color: var(--color-primary);
+}
+
+.faq-question.active {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+}
+
+.faq-question.active .faq-icon {
+    color: var(--color-text-light);
+    transform: rotate(180deg);
+}
+
+.faq-icon {
+    color: var(--color-accent);
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    background-color: #f7f9fc;
+}
+
+.search-box input:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(190, 146, 86, 0.2);
+}
+
+.search-box i {
+    color: var(--color-accent);
+}
+
+.category-btn {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
+.category-btn.active,
+.category-btn:hover {
+    background-color: var(--color-accent);
+    color: var(--color-text-light);
+}
+
+mark {
+    background-color: var(--color-accent);
+    color: var(--color-text-light);
+    padding: 0.2em;
+    border-radius: 3px;
+}
+
 
 
 
