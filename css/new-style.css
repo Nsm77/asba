@@ -6,6 +6,85 @@
   --color-text-light: #FFFFFF;
   --color-error: #e53e3e;
   --color-success: #48bb78;
+
+  --color-dark-bg: #121212;
+  --color-dark-surface: #1E1E1E;
+  --color-dark-text: #E0E0E0;
+  --color-dark-primary: #5C7BFF;
+}
+
+body.dark-mode {
+    --color-bg: var(--color-dark-bg);
+    --color-text: var(--color-dark-text);
+    --color-primary: var(--color-dark-primary);
+    --color-surface: var(--color-dark-surface);
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .header {
+    background: rgba(30, 30, 30, 0.8);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .about,
+body.dark-mode .pricing,
+body.dark-mode .contact-section,
+body.dark-mode .quote-section,
+body.dark-mode .login-section {
+    background-color: var(--color-surface);
+}
+
+body.dark-mode .service-card,
+body.dark-mode .pricing-card,
+body.dark-mode .contact-form-container,
+body.dark-mode .contact-info-container,
+body.dark-mode .login-container,
+body.dark-mode .dashboard-card,
+body.dark-mode .quote-form-container {
+    background: var(--color-surface);
+    box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .section-title,
+body.dark-mode .about-text h3,
+body.dark-mode .service-title,
+body.dark-mode .feature-text h3,
+body.dark-mode .footer-title,
+body.dark-mode .page-title,
+body.dark-mode .pricing-header h3,
+body.dark-mode .accordion-header,
+body.dark-mode .contact-title,
+body.dark-mode .login-title,
+body.dark-mode .card-header h3 {
+    color: var(--color-dark-text);
+}
+
+body.dark-mode .section-subtitle,
+body.dark-mode .about-text p,
+body.dark-mode .service-description,
+body.dark-mode .feature-text p,
+body.dark-mode .footer,
+body.dark-mode .page-subtitle,
+body.dark-mode .pricing-header p,
+body.dark-mode .accordion-content p,
+body.dark-mode .contact-info-item p,
+body.dark-mode .contact-info-item a,
+body.dark-mode .form-group label,
+body.dark-mode .quote-result p {
+    color: #B0B0B0;
+}
+
+body.dark-mode .btn-outline {
+    color: var(--color-dark-text);
+    border-color: var(--color-dark-text);
+}
+
+body.dark-mode .btn-outline:hover {
+    background-color: var(--color-dark-text);
+    color: var(--color-dark-bg);
 }
 
 *,
@@ -962,4 +1041,209 @@ section {
 .nav-actions {
     display: flex;
     align-items: center;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.toggle-label {
+    margin-right: 10px;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: var(--color-primary);
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+/*--------------------------------------------------------------
+# Quote Section
+--------------------------------------------------------------*/
+.quote-section {
+    background: #f8f9fa;
+    padding: 80px 0;
+}
+
+.quote-form-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: var(--color-bg);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.quote-progress {
+    margin-bottom: 40px;
+}
+
+.progress-bar-container {
+    height: 8px;
+    background: #e9ecef;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.progress-bar-fill {
+    width: 33.33%;
+    height: 100%;
+    background: var(--color-accent);
+    border-radius: 5px;
+    transition: width 0.4s ease;
+}
+
+.progress-steps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-step {
+    text-align: center;
+    color: #adb5bd;
+    font-weight: 600;
+}
+
+.progress-step.active {
+    color: var(--color-primary);
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+
+.form-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.quote-result {
+    text-align: center;
+}
+
+.price-display {
+    font-size: 52px;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin: 20px 0;
+}
+
+/*--------------------------------------------------------------
+# Map Section
+--------------------------------------------------------------*/
+.map-section {
+    padding: 80px 0;
+}
+
+.map-container-full {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.map-filters {
+    display: flex;
+    gap: 20px;
+}
+
+.map-filters input, .map-filters select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#map {
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+}
+
+#document-uploader input[type="file"] {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Dashboard Alerts
+--------------------------------------------------------------*/
+#dashboard-alerts {
+    margin-bottom: 30px;
+}
+
+#profile-switcher {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.dashboard-alert {
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.dashboard-alert.alert-info {
+    background-color: #e0f2fe;
+    color: #0c4a6e;
+    border-left: 5px solid #0ea5e9;
+}
+
+.dashboard-alert.alert-warning {
+    background-color: #fffbeb;
+    color: #b45309;
+    border-left: 5px solid #f59e0b;
 }

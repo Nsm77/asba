@@ -24,6 +24,7 @@
                     <li class="nav-item"><a href="dashboard.html" class="nav-link active">Tableau de Bord</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Mes Remboursements</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Mon Contrat</a></li>
+                    <li class="nav-item"><a href="find-doctor.html" class="nav-link">Trouver un médecin</a></li>
                 </ul>
                 <div class="nav-actions">
                     <div class="notification-icon">
@@ -32,6 +33,12 @@
                     </div>
                     <span class="welcome-message">Bonjour, <span id="client-name"></span></span>
                     <button id="logout-button" class="btn btn-outline">Déconnexion</button>
+                    <div class="dark-mode-toggle">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="dark-mode-checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -46,6 +53,7 @@
 
         <section class="dashboard-section">
             <div class="container">
+                <div id="dashboard-alerts"></div>
                 <div class="dashboard-grid-main">
                     <div class="dashboard-grid-left">
                         <div class="dashboard-card chart-container" data-aos="fade-up">
@@ -78,6 +86,14 @@
                         </div>
                     </div>
                     <div class="dashboard-grid-right">
+                        <div class="dashboard-card" id="family-manager" data-aos="fade-up">
+                            <div class="card-header">
+                                <h3>Gérer ma famille</h3>
+                            </div>
+                            <div class="card-content">
+                                <select id="profile-switcher"></select>
+                            </div>
+                        </div>
                         <div class="dashboard-card" id="plan-info" data-aos="fade-up">
                             <div class="card-header">
                                 <h3>Mon Contrat</h3>
@@ -96,6 +112,20 @@
                                 <p><i class="fas fa-user"></i> <span id="info-name"></span></p>
                                 <p><i class="fas fa-map-marker-alt"></i> <span id="info-address"></span></p>
                                 <p><i class="fas fa-phone"></i> <span id="info-phone"></span></p>
+                            </div>
+                        </div>
+                        <div class="dashboard-card" id="document-uploader" data-aos="fade-up">
+                            <div class="card-header">
+                                <h3>Envoyer un document</h3>
+                            </div>
+                            <div class="card-content">
+                                <form id="upload-form">
+                                    <div class="form-group">
+                                        <label for="document-file">Sélectionner un fichier</label>
+                                        <input type="file" id="document-file" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block">Envoyer</button>
+                                </form>
                             </div>
                         </div>
                     </div>
