@@ -3,17 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
-
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Mentions légales d'Assurance Santé Premium : informations légales, coordonnées de l'entreprise, responsabilités et conditions d'utilisation du site.">
-    <meta name="keywords" content="mentions légales, informations légales, assurance santé, responsabilités">
-    <meta name="author" content="Assurance Santé Premium">
-
     <title>Mentions Légales | Assurance Santé Premium</title>
-
-    <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="../css/style-v2.css">
+    <link rel="stylesheet" href="../css/legal-pages.css"> <!-- New CSS for legal pages -->
 </head>
 <body>
     <!-- HEADER -->
@@ -22,35 +15,16 @@
             <a href="../index.html" class="nav__logo">
                 <i class="fas fa-shield-alt"></i> Assurance Santé
             </a>
-
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="../index.html" class="nav__link">Accueil</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="../index.html#about" class="nav__link">À Propos</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="services.html" class="nav__link">Services</a>
-                    </li>
-                     <li class="nav__item">
-                        <a href="faq.html" class="nav__link">FAQ</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="contact.html" class="nav__link">Contact</a>
-                    </li>
+                    <li class="nav__item"><a href="../index.html" class="nav__link">Accueil</a></li>
+                    <li class="nav__item"><a href="../index.html#about" class="nav__link">À Propos</a></li>
+                    <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="faq.html" class="nav__link">FAQ</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
                 </ul>
-
-                <div class="nav__close" id="nav-close">
-                    <i class="fas fa-times"></i>
-                </div>
             </div>
-
-            <!-- Toggle button -->
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
+            <div class="nav__toggle" id="nav-toggle"><i class="fas fa-bars"></i></div>
         </nav>
     </header>
 
@@ -59,45 +33,79 @@
         <section class="section">
             <div class="container">
                 <h1 class="section__title" style="margin-top: 5rem; font-size: var(--h1-font-size);">Mentions Légales</h1>
+                 <p class="home__description" style="text-align: center;">Informations légales et conditions d'utilisation</p>
             </div>
         </section>
 
-        <!-- Legal Content Section -->
-        <section class="section legal">
-            <div class="container" style="max-width: 800px; text-align: left;">
-                <h2>1. Identification de l'entreprise</h2>
-                <p><strong>Forme juridique :</strong> Société par Actions Simplifiée (SAS)</p>
-                <p><strong>Siège social :</strong> 99 rue de camas, 13005 Marseille, France</p>
-                <p><strong>Contact :</strong> 09 82 44 41 48 / contact@assurance-sante-premium.fr</p>
-                
-                <h2>2. Hébergement du site web</h2>
-                <p>Le site est hébergé par OVH SAS, 2 rue Kellermann, 59100 Roubaix, France.</p>
+        <!-- Legal Content -->
+        <section class="legal-content section">
+            <div class="container legal-container">
+                <!-- Identification -->
+                <div class="legal-section">
+                    <h2>1. Identification de l'entreprise</h2>
+                    <div class="contact-info">
+                        <h4>Assurance Santé Premium</h4>
+                        <p><strong>Forme juridique :</strong> Société par Actions Simplifiée (SAS)</p>
+                        <p><strong>Capital social :</strong> 500 000 euros</p>
+                        <p><strong>Siège social :</strong> 99 rue de camas, 13005 Marseille, France</p>
+                        <p><strong>RCS :</strong> Marseille B 123 456 789</p>
+                        <p><strong>SIRET :</strong> 123 456 789 00012</p>
+                        <p><strong>Code APE :</strong> 6512Z (Autres assurances)</p>
+                        <p><strong>TVA Intracommunautaire :</strong> FR12 123456789</p>
+                    </div>
+                    <h3>Dirigeant</h3>
+                    <p><strong>Président :</strong> Jean-Pierre MARTIN</p>
+                    <h3>Contact</h3>
+                    <p><strong>Téléphone :</strong> 09 82 44 41 48</p>
+                    <p><strong>Email :</strong> contact@assurance-sante-premium.fr</p>
+                </div>
 
-                <h2>3. Propriété intellectuelle</h2>
-                <p>L'ensemble du contenu de ce site est la propriété exclusive d'Assurance Santé Premium. Toute reproduction est interdite sans autorisation préalable.</p>
+                <!-- Autorités de contrôle -->
+                <div class="legal-section">
+                    <h2>2. Autorités de contrôle et supervision</h2>
+                    <p>Assurance Santé Premium est soumise au contrôle de l'Autorité de Contrôle Prudentiel et de Résolution (ACPR).</p>
+                </div>
 
-                <h2>4. Responsabilité</h2>
-                <p>Les informations sur ce site sont données à titre indicatif. Seuls les documents contractuels font foi. Nous ne pouvons être tenus responsables des interruptions de service.</p>
+                <!-- Hébergement -->
+                <div class="legal-section">
+                    <h2>3. Hébergement du site web</h2>
+                    <p>Le site web www.assurance-sante-premium.fr est hébergé par OVH SAS.</p>
+                </div>
 
-                <h2>5. Protection des données personnelles</h2>
-                <p>Nous nous engageons à respecter la réglementation en vigueur (RGPD). Pour plus d'informations, consultez notre <a href="politique.html">Politique de Confidentialité</a>.</p>
+                <!-- Propriété intellectuelle -->
+                <div class="legal-section">
+                    <h2>4. Propriété intellectuelle</h2>
+                    <p>L'ensemble du contenu de ce site web est la propriété exclusive d'Assurance Santé Premium. Toute reproduction est interdite.</p>
+                </div>
+
+                <!-- Responsabilité -->
+                <div class="legal-section">
+                    <h2>5. Responsabilité</h2>
+                    <p>Les informations contenues sur ce site sont données à titre indicatif. Seuls les documents contractuels font foi.</p>
+                </div>
+
+                <!-- Données personnelles -->
+                <div class="legal-section">
+                    <h2>6. Protection des données personnelles</h2>
+                    <p>Pour plus d'informations sur le traitement de vos données personnelles, consultez notre <a href="politique.html">Politique de Confidentialité</a>.</p>
+                </div>
+
+                 <!-- Droit applicable -->
+                <div class="legal-section">
+                    <h2>7. Droit applicable et juridiction</h2>
+                    <p>Les présentes mentions légales sont régies par le droit français.</p>
+                </div>
             </div>
         </section>
-
     </main>
 
-    <!--=============== FOOTER ===============-->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer__container container grid">
             <div class="footer__content">
-                <a href="../index.html" class="footer__logo">
-                    <i class="fas fa-shield-alt"></i> Assurance Santé
-                </a>
-                <p class="footer__description">
-                    Votre santé, notre engagement.
-                </p>
+                <a href="../index.html" class="footer__logo"><i class="fas fa-shield-alt"></i> Assurance Santé</a>
+                <p class="footer__description">Votre santé, notre engagement.</p>
             </div>
-
             <div class="footer__content">
                 <h3 class="footer__title">Navigation</h3>
                 <ul class="footer__links">
@@ -106,7 +114,6 @@
                     <li><a href="contact.html" class="footer__link">Contact</a></li>
                 </ul>
             </div>
-
             <div class="footer__content">
                 <h3 class="footer__title">Suivez-nous</h3>
                 <div class="footer__social">
@@ -116,14 +123,10 @@
                 </div>
             </div>
         </div>
-
         <span class="footer__copy">&#169; Assurance Santé. Tous droits réservés.</span>
     </footer>
 
-    <!--=============== SCROLLREVEAL ===============-->
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--=============== MAIN JS ===============-->
     <script src="../js/script-v2.js"></script>
 </body>
 </html>

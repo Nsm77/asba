@@ -163,3 +163,44 @@ sr.reveal(`.services__card, .faq__item`, {interval: 100})
 sr.reveal(`.about__data`, {origin: 'right'})
 sr.reveal(`.about__image`, {origin: 'left'})
 sr.reveal(`.contact__container`, {origin: 'bottom'})
+
+/*=============== DEVIS FORM ===============*/
+document.addEventListener('DOMContentLoaded', () => {
+    const devisForm = document.getElementById('devis-form');
+    if (devisForm) {
+        let currentStep = 1;
+        const totalSteps = 3;
+        const progressFill = document.getElementById('progress-fill');
+
+        window.nextStep = function() {
+            if (currentStep < totalSteps) {
+                document.getElementById(`form-step-${currentStep}`).classList.remove('active');
+                document.getElementById(`step-${currentStep}`).classList.remove('active');
+                currentStep++;
+                document.getElementById(`form-step-${currentStep}`).classList.add('active');
+                document.getElementById(`step-${currentStep}`).classList.add('active');
+                progressFill.style.width = `${(currentStep / totalSteps) * 100}%`;
+            }
+        }
+
+        window.prevStep = function() {
+            if (currentStep > 1) {
+                document.getElementById(`form-step-${currentStep}`).classList.remove('active');
+                document.getElementById(`step-${currentStep}`).classList.remove('active');
+                currentStep--;
+                document.getElementById(`form-step-${currentStep}`).classList.add('active');
+                document.getElementById(`step-${currentStep}`).classList.add('active');
+                progressFill.style.width = `${(currentStep / totalSteps) * 100}%`;
+            }
+        }
+
+        devisForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Mock price calculation
+            const price = Math.floor(Math.random() * (150 - 30 + 1)) + 30;
+            document.getElementById('estimated-price').textContent = `${price} €`;
+            devisForm.style.display = 'none';
+            document.getElementById('results-section').style.display = 'block';
+        });
+    }
+});

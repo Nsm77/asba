@@ -1,0 +1,83 @@
+/* Page Hero Section */
+.page-hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    padding: 8rem 0 4rem 0;
+    text-align: center;
+}
+
+.devis-container {
+    max-width: 768px;
+    margin: auto;
+    background-color: var(--container-color);
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: var(--border-color);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.progress-fill {
+    width: 33.33%;
+    height: 100%;
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    transition: width .4s ease;
+}
+
+.step-indicator {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.step {
+    color: var(--text-color);
+}
+
+.step.active {
+    color: var(--primary-color);
+    font-weight: var(--font-bold);
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+
+.form-step h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.results-section {
+    display: none;
+    text-align: center;
+}
+
+.results-section.active {
+    display: block;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: var(--font-bold);
+    color: var(--primary-color);
+}
+/* Re-using form styles from contact page */
+.form-row, .form-group, .form-group input, .form-group select, .form-group textarea {
+    /* Styles are already defined in contact-page.css, but we can add specifics here if needed */
+}

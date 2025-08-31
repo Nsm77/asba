@@ -3,142 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
-
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Questions fréquentes sur nos assurances santé : souscription, remboursements, couverture, résiliation. Trouvez toutes les réponses à vos questions.">
-    <meta name="keywords" content="FAQ assurance santé, questions fréquentes, souscription, remboursement, couverture, résiliation">
-    <meta name="author" content="Assurance Santé Premium">
-
     <title>FAQ - Questions Fréquentes | Assurance Santé Premium</title>
-
-    <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="../css/style-v2.css">
+    <link rel="stylesheet" href="../css/faq-page.css"> <!-- New CSS for FAQ page -->
 </head>
 <body>
     <!-- HEADER -->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="../index.html" class="nav__logo">
-                <i class="fas fa-shield-alt"></i> Assurance Santé
-            </a>
-
+            <a href="../index.html" class="nav__logo"><i class="fas fa-shield-alt"></i> Assurance Santé</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="../index.html" class="nav__link">Accueil</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="../index.html#about" class="nav__link">À Propos</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="services.html" class="nav__link">Services</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="faq.html" class="nav__link active-link">FAQ</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="contact.html" class="nav__link">Contact</a>
-                    </li>
+                    <li class="nav__item"><a href="../index.html" class="nav__link">Accueil</a></li>
+                    <li class="nav__item"><a href="../index.html#about" class="nav__link">À Propos</a></li>
+                    <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="faq.html" class="nav__link active-link">FAQ</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
                 </ul>
-
-                <div class="nav__close" id="nav-close">
-                    <i class="fas fa-times"></i>
-                </div>
             </div>
-
-            <!-- Toggle button -->
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
+            <div class="nav__toggle" id="nav-toggle"><i class="fas fa-bars"></i></div>
         </nav>
     </header>
 
     <main class="main">
-        <!-- Page Title Section -->
-        <section class="section">
+        <!-- Hero Section -->
+        <section class="section page-hero">
             <div class="container">
-                <h1 class="section__title" style="margin-top: 5rem; font-size: var(--h1-font-size);">Questions Fréquentes</h1>
-                <p class="home__description" style="text-align: center;">Trouvez rapidement les réponses à toutes vos questions.</p>
+                <h1 class="section__title" style="margin-top: 5rem; color: var(--white-color);">Questions Fréquentes</h1>
+                <p class="home__description" style="text-align: center; color: var(--white-color);">Trouvez rapidement les réponses à toutes vos questions.</p>
             </div>
         </section>
 
-        <!-- FAQ Content Section -->
-        <section class="section faq">
+        <!-- FAQ Content -->
+        <section class="section faq-content">
             <div class="container">
                 <!-- Souscription -->
-                <h2 class="services__title" style="margin-bottom: 2rem;">Souscription</h2>
-                <div class="faq__container">
-                    <div class="faq__item">
-                        <h3 class="faq__question">Comment souscrire à une assurance santé chez Assurance Santé Premium ?</h3>
-                        <div class="faq__answer">
-                            <p>La souscription est simple et rapide. Vous pouvez faire une demande de devis en ligne en 2 minutes sur notre site, nous appeler au 09 82 44 41 48, ou prendre rendez-vous en agence. La prise d'effet peut être immédiate.</p>
-                        </div>
+                <div class="faq-category">
+                    <h2 class="category-title">Souscription</h2>
+                    <div class="faq-item">
+                        <div class="faq-question"><span>Comment souscrire ?</span><i class="fas fa-chevron-down"></i></div>
+                        <div class="faq-answer"><p>La souscription est simple et rapide. Vous pouvez faire une demande de devis en ligne, nous appeler au 09 82 44 41 48, ou prendre rendez-vous en agence.</p></div>
                     </div>
-                    <div class="faq__item">
-                        <h3 class="faq__question">Quels documents dois-je fournir pour souscrire ?</h3>
-                        <div class="faq__answer">
-                            <p>Vous devrez fournir une pièce d'identité, un justificatif de domicile, un RIB, et potentiellement votre attestation de résiliation et un questionnaire de santé simplifié.</p>
-                        </div>
-                    </div>
-                     <div class="faq__item">
-                        <h3 class="faq__question">Y a-t-il des délais de carence ?</h3>
-                        <div class="faq__answer">
-                            <p>Nos délais de carence sont très courts : prise d'effet immédiate pour les soins courants, 30 jours pour l'hospitalisation, et 6 mois pour le dentaire et l'optique. Ils peuvent être supprimés si vous changez d'assureur sans interruption.</p>
-                        </div>
+                    <div class="faq-item">
+                        <div class="faq-question"><span>Quels documents fournir ?</span><i class="fas fa-chevron-down"></i></div>
+                        <div class="faq-answer"><p>Vous devrez fournir une pièce d'identité, un justificatif de domicile, un RIB, et potentiellement votre attestation de résiliation et un questionnaire de santé simplifié.</p></div>
                     </div>
                 </div>
-
                 <!-- Remboursement -->
-                <h2 class="services__title" style="margin-top: 3rem; margin-bottom: 2rem;">Remboursement</h2>
-                <div class="faq__container">
-                    <div class="faq__item">
-                        <h3 class="faq__question">Comment fonctionne le tiers payant ?</h3>
-                        <div class="faq__answer">
-                            <p>Le tiers payant vous évite d'avancer les frais. Il est intégral chez nos 50 000+ professionnels de santé partenaires. Présentez simplement votre carte vitale et votre carte de tiers payant.</p>
-                        </div>
+                <div class="faq-category">
+                    <h2 class="category-title">Remboursement</h2>
+                    <div class="faq-item">
+                        <div class="faq-question"><span>Comment fonctionne le tiers payant ?</span><i class="fas fa-chevron-down"></i></div>
+                        <div class="faq-answer"><p>Le tiers payant vous évite d'avancer les frais. Il est intégral chez nos 50 000+ professionnels de santé partenaires.</p></div>
                     </div>
-                    <div class="faq__item">
-                        <h3 class="faq__question">Quels sont les délais de remboursement ?</h3>
-                        <div class="faq__answer">
-                            <p>Les remboursements sont rapides : 48h avec le tiers payant, et 5 jours ouvrés en moyenne sans. Suivez tout en temps réel sur votre espace client.</p>
-                        </div>
+                     <div class="faq-item">
+                        <div class="faq-question"><span>Quels sont les délais de remboursement ?</span><i class="fas fa-chevron-down"></i></div>
+                        <div class="faq-answer"><p>Les remboursements sont rapides : 48h avec le tiers payant, et 5 jours ouvrés en moyenne sans.</p></div>
                     </div>
                 </div>
-
-                 <!-- Couverture -->
-                <h2 class="services__title" style="margin-top: 3rem; margin-bottom: 2rem;">Couverture</h2>
-                <div class="faq__container">
-                    <div class="faq__item">
-                        <h3 class="faq__question">Que couvre exactement mon contrat d'assurance santé ?</h3>
-                        <div class="faq__answer">
-                            <p>Votre contrat couvre un large éventail de soins : consultations, médicaments, hospitalisation, dentaire, optique, médecines douces, etc. Le détail précis est dans votre tableau de garanties.</p>
-                        </div>
-                    </div>
-                    <div class="faq__item">
-                        <h3 class="faq__question">La couverture est-elle valable à l'étranger ?</h3>
-                        <div class="faq__answer">
-                            <p>Oui, nos contrats incluent une couverture de base pour les urgences et le rapatriement à l'étranger. Des extensions sont disponibles pour les séjours prolongés.</p>
-                        </div>
+                <!-- Couverture -->
+                <div class="faq-category">
+                     <h2 class="category-title">Couverture</h2>
+                    <div class="faq-item">
+                        <div class="faq-question"><span>Que couvre mon contrat ?</span><i class="fas fa-chevron-down"></i></div>
+                        <div class="faq-answer"><p>Votre contrat couvre un large éventail de soins : consultations, médicaments, hospitalisation, dentaire, optique, etc. Le détail est dans votre tableau de garanties.</p></div>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
 
-    <!--=============== FOOTER ===============-->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer__container container grid">
             <div class="footer__content">
-                <a href="../index.html" class="footer__logo">
-                    <i class="fas fa-shield-alt"></i> Assurance Santé
-                </a>
-                <p class="footer__description">
-                    Votre santé, notre engagement.
-                </p>
+                <a href="../index.html" class="footer__logo"><i class="fas fa-shield-alt"></i> Assurance Santé</a>
+                <p class="footer__description">Votre santé, notre engagement.</p>
             </div>
-
             <div class="footer__content">
                 <h3 class="footer__title">Navigation</h3>
                 <ul class="footer__links">
@@ -147,7 +89,6 @@
                     <li><a href="contact.html" class="footer__link">Contact</a></li>
                 </ul>
             </div>
-
             <div class="footer__content">
                 <h3 class="footer__title">Suivez-nous</h3>
                 <div class="footer__social">
@@ -157,14 +98,10 @@
                 </div>
             </div>
         </div>
-
         <span class="footer__copy">&#169; Assurance Santé. Tous droits réservés.</span>
     </footer>
 
-    <!--=============== SCROLLREVEAL ===============-->
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--=============== MAIN JS ===============-->
     <script src="../js/script-v2.js"></script>
 </body>
 </html>
