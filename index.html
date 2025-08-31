@@ -2,239 +2,204 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assurance Santé Premium | Mutuelle Famille & Complémentaire Santé | Devis Gratuit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+
+    <!-- SEO Meta Tags -->
     <meta name="description" content="Assurance Santé Premium - Protégez votre famille avec nos solutions d'assurance santé complètes. Devis gratuit en 2 minutes, couverture optimale, tarifs compétitifs. Spécialistes en assurance maladie, mutuelle famille et complémentaire santé.">
+    <meta name="keywords" content="assurance santé, mutuelle santé, assurance maladie, complémentaire santé, protection famille, couverture médicale, devis assurance gratuit, mutuelle famille, assurance hospitalisation, remboursement médical">
+    <meta name="author" content="Assurance Santé Premium">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="French">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="FR">
+    <meta name="geo.placename" content="France">
+
+    <!-- Title -->
+    <title>Assurance Santé Premium | Mutuelle Famille & Complémentaire Santé | Devis Gratuit</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Assurance Santé Premium - Protégez votre famille">
+    <meta property="og:description" content="Solutions d'assurance santé premium pour toute la famille. Devis gratuit, couverture complète, tarifs compétitifs. Spécialistes en protection santé depuis 15 ans.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://assurance-sante-premium.fr">
+    <meta property="og:image" content="assurance-sante-website/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Assurance Santé Premium">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Assurance Santé Premium - Protégez votre famille">
+    <meta name="twitter:description" content="Solutions d'assurance santé premium pour toute la famille. Devis gratuit en 2 minutes.">
+    <meta name="twitter:image" content="assurance-sante-website/images/twitter-card.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://assurance-sante-premium.fr">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="css/modern-design.css">
+    <link rel="stylesheet" href="css/style-v2.css">
 </head>
 <body>
+    <!-- HEADER -->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="index.html" class="nav__logo">
+            <a href="#" class="nav__logo">
                 <i class="fas fa-shield-alt"></i> Assurance Santé
             </a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link active-link">Accueil</a></li>
-                    <li class="nav__item"><a href="pages/services.html" class="nav__link">Services</a></li>
-                    <li class="nav__item"><a href="pages/faq.html" class="nav__link">FAQ</a></li>
-                    <li class="nav__item"><a href="pages/contact.html" class="nav__link">Contact</a></li>
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Accueil</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">À Propos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="pages/contact.html" class="nav__link">Contact</a>
+                    </li>
                 </ul>
+
                 <div class="nav__close" id="nav-close">
                     <i class="fas fa-times"></i>
                 </div>
             </div>
 
-            <div class="nav__btns">
-                <a href="pages/devis.html" class="nav__action-btn">Obtenir un devis</a>
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section class="hero" id="accueil">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-title" data-aos="fade-up">
-                        Protégez votre famille,<br>
-                        <span class="highlight">sécurisez votre santé</span>
-                    </h1>
-                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
-                        Découvrez nos solutions d'assurance santé premium avec une couverture optimale,
-                        des tarifs compétitifs et un service client d'exception. Plus de 50 000 familles nous font confiance.
+    <main class="main">
+        <!-- Home Section -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">Votre Santé, Notre Priorité.</h1>
+                    <p class="home__description">
+                        Des solutions d'assurance santé complètes, pensées pour vous et votre famille.
+                        Bénéficiez d'une couverture optimale à un tarif juste.
                     </p>
-                    <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
-                        <a href="pages/devis.html" class="btn btn-primary btn-large">
-                            <i class="fas fa-file-medical"></i>
-                            Obtenir un devis gratuit
-                        </a>
-                        <a href="tel:+33982444148" class="btn btn-outline btn-large">
-                            <i class="fas fa-phone"></i>
-                            09 82 44 41 48
-                        </a>
-                    </div>
+                    <a href="#about" class="button">Découvrir Nos Offres</a>
                 </div>
-            </div>
-            <div class="scroll-indicator" aria-hidden="true">
-                <div class="scroll-arrow"></div>
+
+                <div class="home__image">
+                    <img src="images/Ya7Ojn3xZROC.jpg" alt="Famille heureuse">
+                </div>
             </div>
         </section>
 
         <!-- About Section -->
-        <section class="about" id="about">
-            <div class="container">
-                <div class="section-header" data-aos="fade-up">
-                    <h2 class="section-title">Votre Partenaire de Confiance</h2>
-                    <p class="section-subtitle">Plus de 15 ans d'expertise au service de votre santé.</p>
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__image">
+                    <img src="images/Ya7Ojn3xZROC.jpg" alt="Our team">
                 </div>
-                <div class="about-content">
-                    <div class="about-image" data-aos="fade-right" data-aos-delay="200">
-                        <img src="images/about-us.jpg" alt="Notre équipe d'experts en assurance santé">
-                    </div>
-                    <div class="about-text" data-aos="fade-left" data-aos-delay="400">
-                        <h3>Notre mission : l'excellence et l'innovation</h3>
-                        <p>
-                            Depuis plus de 15 ans, <strong>Assurance Santé Premium</strong> accompagne les familles françaises dans la protection de leur santé. Notre mission est de vous offrir une couverture santé exceptionnelle, adaptée à votre mode de vie et à vos besoins spécifiques, même en cas de résiliation ou de problèmes de santé préexistants.
-                        </p>
-                        <ul class="about-features">
-                            <li><i class="fas fa-check-circle"></i> Souscription simplifiée en 2 minutes</li>
-                            <li><i class="fas fa-check-circle"></i> Prise d'effet immédiate possible</li>
-                            <li><i class="fas fa-check-circle"></i> Réseau de 50 000+ professionnels partenaires</li>
-                            <li><i class="fas fa-check-circle"></i> Service client disponible 6j/7</li>
-                        </ul>
-                    </div>
+                <div class="about__data">
+                    <h2 class="section__title">Plus qu'une assurance, un partenaire à vos côtés.</h2>
+                    <p class="about__description">
+                        Depuis 15 ans, nous nous engageons à offrir des solutions d'assurance transparentes et humaines.
+                        Notre mission est de vous garantir la tranquillité d'esprit que vous méritez.
+                    </p>
+                    <a href="#services" class="button">Voir nos services</a>
                 </div>
             </div>
         </section>
 
         <!-- Services Section -->
-        <section class="services" id="services">
-            <div class="container">
-                <div class="section-header" data-aos="fade-up">
-                    <h2 class="section-title">Nos Solutions d'Assurance Santé</h2>
-                    <p class="section-subtitle">
-                        Une gamme complète de services pour répondre à tous vos besoins, avec des garanties étendues et des remboursements optimaux.
+        <section class="services section" id="services">
+            <h2 class="section__title">Des services pensés pour votre bien-être.</h2>
+            <div class="services__container container grid">
+                <article class="services__card">
+                    <i class="fas fa-notes-medical services__icon"></i>
+                    <h3 class="services__title">Couverture Complète</h3>
+                    <p class="services__description">
+                        De la consultation à l'hospitalisation, nous couvrons tous vos besoins de santé.
                     </p>
-                </div>
-                <div class="services-grid">
-                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="service-icon"><i class="fas fa-user-md"></i></div>
-                        <h3 class="service-title">Médecine Générale & Spécialisée</h3>
-                        <p class="service-description">Consultations remboursées jusqu'à 200% de la base sécurité sociale.</p>
-                    </div>
-                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-icon"><i class="fas fa-hospital"></i></div>
-                        <h3 class="service-title">Hospitalisation & Chirurgie</h3>
-                        <p class="service-description">Couverture complète avec chambre particulière incluse.</p>
-                    </div>
-                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service-icon"><i class="fas fa-tooth"></i></div>
-                        <h3 class="service-title">Soins Dentaires Premium</h3>
-                        <p class="service-description">Forfaits généreux pour prothèses et orthodontie.</p>
-                    </div>
-                    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-                        <div class="service-icon"><i class="fas fa-eye"></i></div>
-                        <h3 class="service-title">Optique & Vision</h3>
-                        <p class="service-description">Forfait jusqu'à 800€ tous les 2 ans.</p>
-                    </div>
-                    <div class="service-card" data-aos="fade-up" data-aos-delay="500">
-                        <div class="service-icon"><i class="fas fa-pills"></i></div>
-                        <h3 class="service-title">Pharmacie & Médicaments</h3>
-                        <p class="service-description">Tiers payant et couverture des médicaments non remboursés.</p>
-                    </div>
-                    <div class="service-card" data-aos="fade-up" data-aos-delay="600">
-                        <div class="service-icon"><i class="fas fa-spa"></i></div>
-                        <h3 class="service-title">Médecines Douces</h3>
-                        <p class="service-description">Prise en charge de l'ostéopathie, acupuncture, etc.</p>
-                    </div>
-                </div>
+                </article>
+                <article class="services__card">
+                    <i class="fas fa-users services__icon"></i>
+                    <h3 class="services__title">Offres Famille</h3>
+                    <p class="services__description">
+                        Protégez ceux que vous aimez avec des formules adaptées à toute la famille.
+                    </p>
+                </article>
+                <article class="services__card">
+                    <i class="fas fa-headset services__icon"></i>
+                    <h3 class="services__title">Support Dédié</h3>
+                    <p class="services__description">
+                        Un conseiller personnel vous accompagne dans toutes vos démarches.
+                    </p>
+                </article>
             </div>
         </section>
 
-        <!-- Features Section -->
-        <section class="features" id="avantages">
-            <div class="container">
-                <div class="section-header" data-aos="fade-up">
-                    <h2 class="section-title">Pourquoi nous choisir ?</h2>
-                    <p class="section-subtitle">Les avantages qui font la différence.</p>
-                </div>
-                <div class="features-content">
-                    <div class="features-image" data-aos="fade-left" data-aos-delay="200">
-                        <img src="images/features-bg.jpg" alt="Famille heureuse bénéficiant d'une assurance santé premium">
-                    </div>
-                    <div class="features-list" data-aos="fade-right" data-aos-delay="400">
-                        <div class="feature-item">
-                            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
-                            <div class="feature-text">
-                                <h3>Couverture Exceptionnelle</h3>
-                                <p>Des garanties étendues et des plafonds de remboursement élevés.</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon"><i class="fas fa-tags"></i></div>
-                            <div class="feature-text">
-                                <h3>Tarifs Ultra-Compétitifs</h3>
-                                <p>Économisez jusqu'à 40% sur votre mutuelle actuelle.</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon"><i class="fas fa-headset"></i></div>
-                            <div class="feature-text">
-                                <h3>Service Client d'Exception</h3>
-                                <p>Une équipe dédiée disponible 6j/7 pour vous accompagner.</p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
-                            <div class="feature-text">
-                                <h3>Application Mobile Innovante</h3>
-                                <p>Gérez vos remboursements et accédez à vos documents en un clic.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="cta">
-            <div class="container text-center" data-aos="zoom-in">
-                <h2 class="cta-title">Prêt à protéger votre famille ?</h2>
-                <p class="cta-subtitle">
-                    Obtenez votre devis personnalisé en moins de 2 minutes et découvrez combien vous pouvez économiser.
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="contact__container container">
+                <h2 class="section__title">Besoin d'un conseil ?</h2>
+                <p class="contact__description">
+                    Notre équipe est à votre écoute pour répondre à toutes vos questions.
                 </p>
-                <a href="pages/devis.html" class="btn btn-primary btn-large">
-                    <i class="fas fa-file-medical"></i>
-                    Obtenir mon devis gratuit
-                </a>
+                <a href="pages/contact.html" class="button">Contactez-nous</a>
             </div>
         </section>
     </main>
 
-    <footer class="footer section">
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
         <div class="footer__container container grid">
             <div class="footer__content">
                 <a href="#" class="footer__logo">
                     <i class="fas fa-shield-alt"></i> Assurance Santé
                 </a>
-                <p class="footer__description">Votre partenaire de confiance pour une santé de fer.</p>
+                <p class="footer__description">
+                    Votre santé, notre engagement.
+                </p>
             </div>
 
             <div class="footer__content">
                 <h3 class="footer__title">Navigation</h3>
                 <ul class="footer__links">
-                    <li><a href="index.html" class="footer__link">Accueil</a></li>
-                    <li><a href="pages/services.html" class="footer__link">Services</a></li>
-                    <li><a href="pages/faq.html" class="footer__link">FAQ</a></li>
+                    <li><a href="#about" class="footer__link">À Propos</a></li>
+                    <li><a href="#services" class="footer__link">Services</a></li>
+                    <li><a href="#contact" class="footer__link">Contact</a></li>
                 </ul>
             </div>
 
             <div class="footer__content">
-                <h3 class="footer__title">Légal</h3>
-                <ul class="footer__links">
-                    <li><a href="pages/mentions.html" class="footer__link">Mentions Légales</a></li>
-                    <li><a href="pages/politique.html" class="footer__link">Confidentialité</a></li>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Social</h3>
-                <ul class="footer__social">
-                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/" target="_blank" class="footer__social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link"><i class="fab fa-instagram"></i></a>
-                </ul>
+                <h3 class="footer__title">Suivez-nous</h3>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </div>
 
         <span class="footer__copy">&#169; Assurance Santé. Tous droits réservés.</span>
     </footer>
 
-    <script src="js/modern-script.js"></script>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="js/script-v2.js"></script>
 </body>
 </html>
